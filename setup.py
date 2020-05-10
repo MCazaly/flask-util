@@ -2,11 +2,17 @@ from setuptools import setup
 
 
 setup(
-    name="Example Python Package",
-    version="1.0.3",
-    description="An example Python package",
-    url="https://example.com",
-    author="matcaz",
-    packages=["example"],
+    name="flask-util",
+    version="0.0.1dev",
+    description="My personal Flask utility package.",
+    url="https://github.com/Fakas/flask-util",
+    author="Matthew Cazaly",
+    author_email="matthewcaz@gmail.com",
+    packages=["flask_util"],
     include_package_data=True,
+    install_requires=[
+        "Werkzeug==0.16.0",
+        "Flask==1.1.2",
+        "flask-restplus==0.13.0"
+    ]
 )
