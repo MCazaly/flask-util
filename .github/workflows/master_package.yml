@@ -14,9 +14,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - shell: bash
-      env:
-        - PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v1
       with:
@@ -34,5 +31,8 @@ jobs:
       run: |
         ./build.sh
     - name: Publish Package
+      shell: bash
+      env:
+        PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
       run: |
         ./publish.sh "https://upload.pypi.org/legacy/" "$PYPI_TOKEN"
