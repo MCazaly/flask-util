@@ -5,8 +5,8 @@ from flask import url_for
 class SecureApi(Api):
     dev_port = None
 
-    def __init__(self, dev_port=5000, **kwargs):
-        super().__init__(**kwargs)
+    def __init__(self, app, dev_port=5000, **kwargs):
+        super().__init__(app, **kwargs)
         self.dev_port = dev_port
         
     @property
