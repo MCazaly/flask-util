@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name="flask-util",
-    version="0.0.1dev1",
+    version="0.0.1dev2",
     description="My personal Flask utility package.",
     url="https://github.com/Fakas/flask-util",
     author="Matthew Cazaly",
