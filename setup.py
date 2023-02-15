@@ -11,7 +11,7 @@ setup(
     packages=["flask_util"],
     include_package_data=True,
     install_requires=[
-        "Werkzeug==0.16.0",
+        "Werkzeug==2.2.3",
         "Flask==1.1.2",
         "flask-restplus==0.13.0"
     ]
